@@ -4,7 +4,7 @@ echo "Building and launching services..."
 docker compose up -d
 
 echo "Waiting for MongoDB to start..."
-sleep 10
+sleep 20
 
 echo "Initializing the configuration server..."
 docker exec -i configSrv mongosh --port 27017 --quiet --eval '
@@ -50,7 +50,7 @@ rs.initiate(
 '
 
 echo "Waiting for shards to initialize..."
-sleep 5
+sleep 15
 
 echo "Initializing the router..."
 docker exec -i mongos_router mongosh --port 27020 --quiet --eval '

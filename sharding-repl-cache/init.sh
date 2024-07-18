@@ -50,7 +50,7 @@ rs.initiate(
 '
 
 echo "Waiting for shards to initialize..."
-sleep 15
+sleep 25
 
 echo "Initializing the router..."
 docker exec -i mongos_router mongosh --port 27020 --quiet --eval '

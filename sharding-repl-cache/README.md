@@ -33,11 +33,11 @@
 
 ### Приложение pymongo-api доступно на локальной машине:
 
-http://localhost:8080
+http://localhost:8000
 
 ### Swagger:
 
-http://localhost:8080/docs
+http://localhost:8000/docs
 
 ## Для остановки приложения выполнить скрипт:
 
